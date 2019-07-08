@@ -9,6 +9,12 @@ steps {
 sh 'node --version'
 }
 }
+stage('Docker build')
+{
+steps {
+sh "docker build -t nikhilnidhi/calculator_1 ."
+}
+}
 }
 }
 
